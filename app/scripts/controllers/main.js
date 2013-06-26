@@ -2,9 +2,14 @@
 
 angular.module('meanAWlmApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.events = [];
+    $scope.canFill = $scope.canCancel = false;
+
+    $scope.startFill = function () {
+      // PUT /fill
+    };
+
+    $scope.cancelFill = function () {
+      // PUT /cancel
+    };
   });
