@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanAWlmApp', [])
+angular.module('wlmApp', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

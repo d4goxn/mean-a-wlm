@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanAWlmApp')
+angular.module('wlmApp')
   .controller('MainCtrl', function ($scope) {
     $scope.events = [];
     $scope.canFill = $scope.canCancel = false;
