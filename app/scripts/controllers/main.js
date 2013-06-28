@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wlmApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.events = [];
     $scope.canFill = $scope.canCancel = false;
 
@@ -16,4 +16,4 @@ angular.module('wlmApp')
     $http.get('events.json').success(function (events) {
       $scope.events = events;
     });
-  });
+  }]);
